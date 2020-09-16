@@ -5,6 +5,8 @@ import (
 	"log"
 
 	"github.com/shehzabdeveloper/gRPC-rest/echo"
+	"golang.org/x/net/context"
+	"google.golang.org/grpc"
 )
 
 func main() {
