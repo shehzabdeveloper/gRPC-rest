@@ -1,5 +1,5 @@
 syntax = "proto3";
-package main;
+package echo;
 
 option go_package="./echo";
 

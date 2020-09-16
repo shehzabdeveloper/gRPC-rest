@@ -16,10 +16,10 @@ func main() {
 	if err != nil {
 		log.Fatalf("Failed to listen: %v", err)
 	}
-	s := echo.Server{}
+	ss := echo.Server{}
 	grpcServer := grpc.NewServer()
 
-	echo.RegisterEchoServiceServer(grpcServer, &s)
+	echo.RegisterEchoServiceService(grpcServer, &ss)
 
 	if err := grpcServer.Serve(lis); err != nil {
 		log.Fatalf("Failed to serve: %s", err)
